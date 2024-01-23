@@ -14,5 +14,5 @@ public interface OnInvokeView {
      *
      * @param view 浮窗布局
      */
-    void invoke(View view);
+    void inflateView(View view);
 }

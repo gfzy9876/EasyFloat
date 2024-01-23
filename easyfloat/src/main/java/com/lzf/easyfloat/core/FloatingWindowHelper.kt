@@ -150,7 +150,7 @@ internal class FloatingWindowHelper(val context: Context, var config: FloatConfi
 
                     // 设置callbacks
                     layoutView = floatingView
-                    invokeView?.invoke(floatingView)
+                    invokeView?.inflateView(floatingView)
                     callbacks?.createdResult(true, null, floatingView)
                     floatCallbacks?.builder?.createdResult?.invoke(true, null, floatingView)
                 }
